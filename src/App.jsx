@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/layout/Navbar";
 import HeroSection from "./components/sections/HeroSection";
+import MapDashboardSection from "./components/sections/MapDashboardSection";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
 
       <main>
         <HeroSection />
+        <MapDashboardSection />
       </main>
     </div>
   );
