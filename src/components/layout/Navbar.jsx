@@ -24,7 +24,6 @@ const Navbar = () => {
       <div className="max-w-[1440px] mx-auto px-6 md:px-20 flex justify-between items-center">
         {/* Bagian Logo (Dot Merah + Teks) */}
         <div className="flex items-center gap-3">
-          <div className="w-3 h-3 rounded-full bg-accentRed"></div>
           <span className="font-heading font-bold text-textHeading tracking-widest text-lg">
             KOTA PARI
           </span>

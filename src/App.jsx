@@ -6,6 +6,7 @@ import HighlightSection from "./components/sections/HighlightSection"; // <-- Im
 import TimelineSection from "./components/sections/TimelineSection"; // <-- Import Baru
 import MapDashboardSection from "./components/sections/MapDashboardSection";
 import GallerySection from "./components/sections/GallerySection";
+import CTASection from "./components/sections/CTASection";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <TimelineSection /> {/* <-- Posisi sebelum Peta */}
         <MapDashboardSection />
         <GallerySection />
+        <CTASection />
       </main>
 
       <Footer />

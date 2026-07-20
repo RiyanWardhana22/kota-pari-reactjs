@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   // Memecah kata agar animasinya muncul bergantian (staggered)
-  const titleWords = ["SEJARAH", "KOTA", "PARI"];
+  const titleWords = ["DIGI", "MUSEUM"];
 
   // Pengaturan Animasi menggunakan Framer Motion
   const containerVariants = {
