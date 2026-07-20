@@ -36,10 +36,6 @@ const HighlightSection = () => {
             transition={{ duration: 0.7, delay: item.delay, ease: "easeOut" }}
             className="bg-bgCard border border-borderLight p-8 rounded-2xl hover:border-accentRed/50 transition-colors group"
           >
-            <div className="w-12 h-12 rounded-full bg-bgPrimary border border-borderLight flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              {/* Ikon Titik Merah sederhana */}
-              <div className="w-3 h-3 rounded-full bg-accentRed"></div>
-            </div>
             <h3 className="text-2xl font-heading font-bold text-textHeading mb-4">
               {item.title}
             </h3>

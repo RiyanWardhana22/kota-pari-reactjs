@@ -56,6 +56,59 @@ body {
   animation: pulse-permukiman 2s infinite;
 }
 
+/* --- Animasi Marker Baru --- */
+@keyframes pulse-pemerintahan {
+  0% {
+    box-shadow: 0 0 0 0 rgba(42, 157, 143, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 14px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+@keyframes pulse-wisata {
+  0% {
+    box-shadow: 0 0 0 0 rgba(244, 162, 97, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 14px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+@keyframes pulse-sejarah {
+  0% {
+    box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 14px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+/* Kategori Marker Tambahan */
+.category-pemerintahan {
+  background-color: #2a9d8f; /* Hijau Tosca */
+  animation: pulse-pemerintahan 2s infinite;
+}
+
+.category-wisata {
+  background-color: #f4a261; /* Oranye */
+  animation: pulse-wisata 2.2s infinite;
+}
+
+.category-sejarah {
+  background-color: #e63946; /* Merah */
+  animation: pulse-sejarah 1.8s infinite;
+}
+
 /* Menghapus background putih bawaan Leaflet agar menyatu dengan Dark Mode */
 .leaflet-container {
   background: #0a0a0a !important;
