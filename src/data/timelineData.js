@@ -1,30 +1,37 @@
 export const timelineData = [
   {
     id: 1,
-    year: "Pra-1900",
-    title: "Awal Permukiman Nelayan",
+    year: "Era Legenda & Portugis",
+    title: "Masa Kerajaan & Kedatangan Pelaut",
     description:
-      "Kawasan pesisir mulai didiami oleh kelompok nelayan Melayu yang membangun gubuk-gubuk sederhana di sekitar muara.",
+      "Menurut legenda, di kawasan Pantai Cermin dahulunya berdiri sebuah kerajaan milik Sri Putri Cermin dengan istana pasir kuarsa yang cahayanya terlihat hingga ke Selat Malaka. Pada era Portugis, pelaut asal Parepare (Sulawesi Selatan) singgah via Pulau Berhala dan menetap. Kisah ini menjadi salah satu dari tiga versi asal mula nama Kota Pari, selain karena melimpahnya ikan pari dan suburnya tanaman pare.",
   },
   {
     id: 2,
-    year: "1920-an",
-    title: "Pembangunan Dermaga Kayu",
+    year: "1960-an",
+    title: "Awal Pemerintahan Desa",
     description:
-      "Aktivitas melaut semakin ramai. Sebuah dermaga kayu sederhana dibangun secara swadaya untuk mempermudah kapal bersandar.",
+      "Desa Kota Pari diperkirakan mulai berdiri secara administratif pada tahun 1960-an. Wilayah desa ini dahulunya merupakan bagian dari tanah kesultanan. Pada awal pembentukannya, tokoh masyarakat yang diketahui menjabat sebagai Kepala Kampung adalah Bapak Abdul Manak.",
   },
   {
     id: 3,
-    year: "1945-1950",
-    title: "Masa Kemerdekaan",
+    year: "2004",
+    title: "Kebangkitan Pariwisata Desa",
     description:
-      "Penduduk pesisir Kota Pari ikut berkontribusi dalam menjaga keamanan pesisir timur Sumatera pada awal masa kemerdekaan Indonesia.",
+      "Perubahan terbesar bagi perekonomian Desa Kota Pari dimulai pada tahun ini. Kawasan pesisir yang sebelumnya difungsikan sebagai tambak udang mulai bertransisi. Pembukaan Pantai Wong Rame menjadi objek wisata pantai pertama yang memicu perkembangan pesat sektor pariwisata di desa ini.",
   },
   {
     id: 4,
-    year: "Era Modern",
-    title: "Desa Wisata & Konservasi",
+    year: "2006",
+    title: "Festival Datuk Pengembara",
     description:
-      "Saat ini, Kota Pari berkembang tidak hanya sebagai desa nelayan, tetapi juga berfokus pada pelestarian sejarah pesisir dan ekosistem mangrove.",
+      "Sebuah festival tahunan yang digagas oleh tokoh Tionghoa, Iswanto Browo, bermula dari mimpinya mengenai pengembara Islam (Datuk) di Dusun Dua. Festival yang diisi dengan khitanan massal, doa bersama, dan pembagian sembako ini menjadi simbol eratnya harmoni dan toleransi antara etnis Tionghoa dan penduduk asli Melayu.",
+  },
+  {
+    id: 5,
+    year: "Tradisi Rutin (3-5 Tahun)",
+    title: "Ritual Jamu Laut & Tolak Bala",
+    description:
+      "Sebagai masyarakat pesisir, nelayan Kota Pari melestarikan ritual Jamu Laut yang dipimpin oleh pawang laut setempat. Tradisi ini menggabungkan penyerahan sesajen dengan zikir dan doa kepada Allah SWT sebagai wujud syukur dan tolak bala. Setelah ritual, nelayan dilarang melaut selama 3 hari agar ekosistem pulih dan tangkapan melimpah.",
   },
 ];

@@ -3,8 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const LocalHistorySection = () => {
   const [activeStory, setActiveStory] = useState(0);
-
-  // Data Sejarah Lokal berdasarkan notulensi observasi
   const stories = [
     {
       title: "Tradisi Jamu Laut",
@@ -49,7 +47,6 @@ const LocalHistorySection = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-8 lg:gap-16">
-        {/* Navigasi Kiri (Menu Cerita) */}
         <div className="w-full md:w-1/3 flex flex-col gap-4">
           {stories.map((story, index) => {
             const isActive = activeStory === index;
@@ -87,18 +84,14 @@ const LocalHistorySection = () => {
               transition={{ duration: 0.4, ease: "easeOut" }}
               className="absolute inset-0 flex flex-col h-full"
             >
-              {/* Gambar Top Banner */}
               <div
                 className="w-full h-1/2 md:h-3/5 bg-cover bg-center relative"
                 style={{
                   backgroundImage: `url(${stories[activeStory].image})`,
                 }}
               >
-                {/* Gradient Overlay untuk transisi mulus ke teks */}
                 <div className="absolute inset-0 bg-gradient-to-t from-bgCard to-transparent"></div>
               </div>
-
-              {/* Area Teks Cerita */}
               <div className="p-8 md:p-10 relative z-10 flex-grow flex flex-col justify-end">
                 <span className="text-xs uppercase tracking-widest text-accentRed font-bold mb-2">
                   {stories[activeStory].subtitle}
