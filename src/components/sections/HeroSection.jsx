@@ -1,16 +1,28 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const HeroSection = () => {
-  // Memecah kata agar animasinya muncul bergantian (staggered)
   const titleWords = ["DIGI", "MUSEUM"];
+  const bgImages = [
+    "/assets/images/bg.png",
+    "/assets/images/galeri-4.jpeg",
+    "/assets/images/galeri-1.png",
+    "/assets/images/kdi.JPG",
+  ];
 
-  // Pengaturan Animasi menggunakan Framer Motion
+  const [currentBg, setCurrentBg] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBg((prev) => (prev + 1) % bgImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [bgImages.length]);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.2 }, // Jeda 0.2 detik antar kata
+      transition: { staggerChildren: 0.2 },
     },
   };
 
@@ -26,19 +38,23 @@ const HeroSection = () => {
   return (
     <section
       id="beranda"
-      className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden"
+      className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-bgPrimary"
     >
-      {/* Background & Overlay Gradient Gelap */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-bgPrimary/10 to-bgPrimary/95 z-10"></div>
-        {/* Gambar background sementara, pastikan siapkan foto asli nantinya */}
-        <div
-          className="w-full h-full bg-bgCard bg-cover bg-center"
-          style={{ backgroundImage: "url('/assets/images/hero-bg.webp')" }}
-        ></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-bgPrimary/30 to-bgPrimary/95 z-10"></div>
+        <AnimatePresence mode="popLayout">
+          <motion.div
+            key={currentBg}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }} // Transisi halus 1.5 detik
+            className="absolute inset-0 w-full h-full bg-cover bg-center"
+            style={{ backgroundImage: `url(${bgImages[currentBg]})` }}
+          />
+        </AnimatePresence>
       </div>
 
-      {/* Konten Teks Animasi */}
       <div className="relative z-10 text-center max-w-[1440px] px-6 w-full">
         <motion.div
           variants={containerVariants}
@@ -56,7 +72,6 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Indikator Navigator Angka (Samping Kanan) */}
       <div className="hidden md:flex absolute right-10 top-1/2 -translate-y-1/2 flex-col items-end gap-3 text-textBody z-10">
         <span className="text-sm opacity-40">01</span>
         <span className="text-2xl text-textHeading font-bold relative flex items-center">
@@ -66,16 +81,6 @@ const HeroSection = () => {
         <span className="text-sm opacity-40">03</span>
         <span className="text-sm opacity-40">04</span>
       </div>
-
-      {/* Indikator CTA Scroll memantul */}
-      <motion.div
-        className="absolute bottom-10 z-10 flex flex-col items-center gap-3 text-textBody text-xs tracking-widest font-medium"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-      >
-        SCROLL &gt;&gt;
-        <div className="w-[1px] h-12 bg-borderLight"></div>
-      </motion.div>
     </section>
   );
 };

@@ -2,26 +2,24 @@ import React from "react";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import HeroSection from "./components/sections/HeroSection";
-import HighlightSection from "./components/sections/HighlightSection"; // <-- Import Baru
-import TimelineSection from "./components/sections/TimelineSection"; // <-- Import Baru
+import HighlightSection from "./components/sections/HighlightSection";
+import TimelineSection from "./components/sections/TimelineSection";
 import MapDashboardSection from "./components/sections/MapDashboardSection";
 import GallerySection from "./components/sections/GallerySection";
-import CTASection from "./components/sections/CTASection";
+import LocalHistorySection from "./components/sections/LocalHistorySection"; // <-- Import Baru
 
 function App() {
   return (
     <div className="bg-bgPrimary text-textBody min-h-screen font-body selection:bg-accentRed selection:text-white">
       <Navbar />
-
       <main>
         <HeroSection />
-        <HighlightSection /> {/* <-- Posisi setelah Hero */}
-        <TimelineSection /> {/* <-- Posisi sebelum Peta */}
+        <HighlightSection />
+        <TimelineSection />
         <MapDashboardSection />
         <GallerySection />
-        <CTASection />
+        <LocalHistorySection /> {/* <-- Menggantikan CTASection */}
       </main>
-
       <Footer />
     </div>
   );

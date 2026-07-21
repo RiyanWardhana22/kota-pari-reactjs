@@ -6,9 +6,9 @@ export const historicalSites = [
     coordinates: [3.645068, 98.968481],
     shortDescription:
       "Pusat administrasi dan pelayanan masyarakat Desa Kota Pari. Menjadi titik kumpul utama untuk kegiatan perangkat desa dan mahasiswa KKN.",
-    yearEstablished: "Era Modern",
+    yearEstablished: "~ 2018",
     significanceLevel: 5,
-    imageUrl: "/assets/images/kantor-desa.jpg",
+    imageUrl: "/assets/images/bg.png",
   },
   {
     id: "site-02",
@@ -19,7 +19,7 @@ export const historicalSites = [
       "Destinasi wisata pantai andalan di Kota Pari yang menawarkan pemandangan Selat Malaka, saung pinggir pantai, dan kuliner laut khas pesisir.",
     yearEstablished: "Era Modern",
     significanceLevel: 4,
-    imageUrl: "/assets/images/wisata-pantai.jpg",
+    imageUrl: "/assets/images/galeri-4.jpeg",
   },
   {
     id: "site-03",
@@ -60,8 +60,8 @@ export const historicalSites = [
     category: "Wisata",
     coordinates: [3.664652, 98.963418],
     shortDescription:
-      "Pusat penyebaran agama Islam dan kegiatan spiritual masyarakat pesisir yang telah berdiri sejak masa lampau dan mengalami berbagai pemugaran.",
-    yearEstablished: "~1930",
+      "Pantai Kuala Dewi berdiri tahun 2004, dikelola oleh Ibu Maryani Lubis dan keluarganya melalui Kelompok Tunas Baru. Awalnya laut, lalu ditimbun bertahap hingga menjadi pantai. Nama Kuala Dewi diberikan oleh abang pendiri tanpa makna khusus.",
+    yearEstablished: "~2004",
     significanceLevel: 4,
     imageUrl: "/assets/images/masjid.jpg",
   },

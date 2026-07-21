@@ -19,8 +19,8 @@ const GallerySection = () => {
     },
     {
       id: 2,
-      title: "Pantai",
-      img: "/assets/images/Screenshot 2026-07-20 150946.png",
+      title: "Pantai Kuala Dewi",
+      img: "/assets/images/kdi.JPG",
       span: "col-span-12 md:col-span-4 row-span-1",
     },
     {

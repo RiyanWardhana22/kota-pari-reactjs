@@ -45,7 +45,7 @@ const MapDashboardSection = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-6 relative">
-        <div className="w-full h-[60vh] lg:h-[70vh] rounded-2xl overflow-hidden border border-borderLight relative shadow-2xl">
+        <div className="w-full h-[60vh] lg:h-[90vh] rounded-2xl overflow-hidden border border-borderLight relative shadow-2xl">
           {/* Tombol Filter Kategori */}
           <div className="absolute top-4 left-4 z-[400] flex gap-2 flex-wrap">
             {filters.map((filter) => (
