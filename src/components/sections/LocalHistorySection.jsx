@@ -9,28 +9,28 @@ const LocalHistorySection = () => {
       subtitle: "Wujud Syukur & Tolak Bala",
       content:
         "Ritual Jamu Laut merupakan tradisi tolak bala yang rutin dilakukan 3 hingga 5 tahun sekali oleh para nelayan. Dipimpin oleh seorang pawang laut, ritual ini diisi dengan zikir dan doa bersama sebagai wujud rasa syukur kepada Allah SWT. Usai ritual, nelayan dianjurkan tidak melaut selama 3 hari dengan harapan hasil tangkapan akan semakin melimpah.",
-      image: "/assets/images/dermaga.jpg",
+      image: "/assets/images/ceritalegenda/jamu_laut.png",
     },
     {
       title: "Festival Datuk Pengembara",
       subtitle: "Simbol Harmoni Budaya",
       content:
         "Sejak tahun 2006, festival ini rutin diselenggarakan pada akhir tahun. Berawal dari visi Iswanto Browo (seorang tokoh Tionghoa) mengenai persinggahan Datuk beragama Islam di Desa Kota Pari. Festival ini menjadi simbol kerukunan etnis Melayu dan Tionghoa, dimeriahkan dengan khitanan massal, pertunjukan kesenian, hingga doa bersama.",
-      image: "/assets/images/masjid.jpg",
+      image: "/assets/images/ceritalegenda/datuk_pengembara.png",
     },
     {
       title: "Asal-Usul Kota Pari",
       subtitle: "Tiga Versi Cerita Rakyat",
       content:
         "Menurut Bapak Syafi'i Harahap, ada tiga versi asal mula nama desa ini. Pertama, karena melimpahnya populasi ikan pari di masa lalu. Kedua, jejak pelaut asal Parepare (Sulawesi) yang singgah di Pulau Berhala lalu menetap di kawasan ini. Ketiga, merujuk pada banyaknya tanaman pare yang dahulu tumbuh subur di wilayah pesisir.",
-      image: "/assets/images/galeri-3.jpg",
+      image: "/assets/images/ceritalegenda/kota_pari.png",
     },
     {
       title: "Legenda Putri Cermin",
       subtitle: "Mitos Istana Pasir Kuarsa",
       content:
         "Legenda kuno menyebutkan bahwa dahulu kawasan ini adalah sebuah kerajaan yang dipimpin oleh seorang raja dengan putrinya, Sri Putri Cermin. Istana kerajaan dibangun dari pasir kuarsa yang sangat memukau. Saking indahnya, pantulan cahaya dari istana tersebut konon dapat terlihat hingga ke perairan Selat Malaka.",
-      image: "/assets/images/galeri-4.jpeg",
+      image: "/assets/images/ceritalegenda/putri_cermin.png",
     },
   ];
 
