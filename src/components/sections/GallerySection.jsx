@@ -25,8 +25,8 @@ const GallerySection = () => {
     },
     {
       id: 3,
-      title: "Aktivitas Nelayan",
-      img: "/assets/images/galeri-3.jpg",
+      title: "Perkawinan Adat Melayu",
+      img: "/assets/images/adatMelayu.png",
       span: "col-span-12 md:col-span-4 row-span-1",
     },
     {

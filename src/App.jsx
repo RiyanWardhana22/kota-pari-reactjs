@@ -6,7 +6,9 @@ import HighlightSection from "./components/sections/HighlightSection";
 import TimelineSection from "./components/sections/TimelineSection";
 import MapDashboardSection from "./components/sections/MapDashboardSection";
 import GallerySection from "./components/sections/GallerySection";
-import LocalHistorySection from "./components/sections/LocalHistorySection"; // <-- Import Baru
+import LocalHistorySection from "./components/sections/LocalHistorySection";
+import QuizSection from "./components/sections/QuizSection";
+import GameKisahPengembara from "./components/sections/GameKisahPengembara";
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
         <TimelineSection />
         <MapDashboardSection />
         <GallerySection />
-        <LocalHistorySection /> {/* <-- Menggantikan CTASection */}
+        <LocalHistorySection />
+        <QuizSection />
+        <GameKisahPengembara />
       </main>
       <Footer />
     </div>
