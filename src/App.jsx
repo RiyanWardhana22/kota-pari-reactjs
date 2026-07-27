@@ -7,6 +7,7 @@ import TimelineSection from "./components/sections/TimelineSection";
 import MapDashboardSection from "./components/sections/MapDashboardSection";
 import GallerySection from "./components/sections/GallerySection";
 import LocalHistorySection from "./components/sections/LocalHistorySection";
+import KesultananStorySection from "./components/sections/KesultananStorySection";
 import QuizSection from "./components/sections/QuizSection";
 import GameKisahPengembara from "./components/sections/GameKisahPengembara";
 
@@ -21,6 +22,7 @@ function App() {
         <MapDashboardSection />
         <GallerySection />
         <LocalHistorySection />
+        <KesultananStorySection />
         <QuizSection />
         <GameKisahPengembara />
       </main>

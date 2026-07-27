@@ -130,7 +130,6 @@ const GallerySection = () => {
             ref={(el) => (cardsRef.current[index] = el)}
             onMouseMove={(e) => handleMouseMove(e, index)}
             onMouseLeave={() => handleMouseLeave(index)}
-            // Gaya CSS transform-style preserve-3d krusial untuk efek 3D berlapis
             style={{ transformStyle: "preserve-3d" }}
             className={`relative rounded-xl overflow-hidden group cursor-pointer ${item.span} shadow-2xl`}
           >
@@ -138,11 +137,10 @@ const GallerySection = () => {
               className="w-full h-full bg-cover bg-center bg-bgCard"
               style={{
                 backgroundImage: `url(${item.img})`,
-                transform: "translateZ(-50px)", // Mendorong gambar sedikit ke belakang di ruang 3D
+                transform: "translateZ(-50px)",
               }}
             ></div>
 
-            {/* Teks dimajukan ke depan di ruang 3D (translateZ) */}
             <div
               style={{ transform: "translateZ(80px)" }}
               className="absolute inset-0 bg-gradient-to-t from-bgPrimary/95 via-bgPrimary/20 to-transparent flex items-end p-8 pointer-events-none"
