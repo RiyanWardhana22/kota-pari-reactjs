@@ -43,7 +43,7 @@ const KesultananStorySection = () => {
     },
     {
       id: "budaya",
-      title: "Wirisan Sosial",
+      title: "Warisan Sosial",
       subtitle: "Kemeriahan Jelang Idul Adha",
       content:
         "Sultan Sulaiman Syariful Alam Shah memanfaatkan kawasan Rencah di hutan bakau Kota Pari sebagai tempat memelihara kerbau yang digunakan untuk keperluan upacara kerajaan dan dibagikan kepada masyarakat pada hari-hari besar. Menjelang Iduladha, diselenggarakan laga kerbau sebagai tradisi budaya tanpa unsur perjudian, dengan daging kerbau yang kalah dibagikan kepada rakyat. Di bidang pendidikan, Sultan mendirikan Sekolah Melayu dan madrasah di Kota Pari dan Pantai Cermin untuk mengajarkan bahasa Melayu, Al-Qur'an, dan aksara Jawi, serta membuka kesempatan bagi siswa berprestasi melanjutkan pendidikan ke Maktab Sjairus Sulaiman.",

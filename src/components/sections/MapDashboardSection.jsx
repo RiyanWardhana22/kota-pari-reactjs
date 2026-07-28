@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-import { MapContainer, TileLayer, Marker } from "react-leaflet";
+// Tambahkan import Polygon dari react-leaflet
+import { MapContainer, TileLayer, Marker, Polygon } from "react-leaflet";
 import L from "leaflet";
 import { motion, AnimatePresence } from "framer-motion";
-import { historicalSites } from "../../data/historicalSites";
+// Pastikan mengimpor data polygon yang baru kita buat
+import {
+  historicalSites,
+  desaKotaPariPolygon,
+} from "../../data/historicalSites";
 
-// Membuat fungsi untuk merender ikon HTML kustom
 const createCustomIcon = (category) => {
   return L.divIcon({
     className: "bg-transparent",
@@ -18,7 +22,6 @@ const MapDashboardSection = () => {
   const [activeFilter, setActiveFilter] = useState("Semua");
   const [activeSite, setActiveSite] = useState(null);
 
-  // Kumpulan kategori filter disesuaikan dengan data baru
   const filters = ["Semua", "Pemerintahan", "Wisata", "Sejarah", "Maritim"];
 
   const filteredSites =
@@ -27,6 +30,17 @@ const MapDashboardSection = () => {
       : historicalSites.filter(
           (site) => site.category.toLowerCase() === activeFilter.toLowerCase(),
         );
+
+  const polygonOptions = {
+    color: "#E63946", // Warna garis tepi (Merah)
+    weight: 3, // Ketebalan garis
+    opacity: 0.9, // Opasitas garis tepi
+    fillColor: "#0077B6", // Warna isian (Biru)
+    fillOpacity: 0.1, // Transparansi isian sangat tipis agar satelit terlihat
+    dashArray: "8, 8", // Garis putus-putus
+    lineCap: "round",
+    lineJoin: "round",
+  };
 
   return (
     <section
@@ -46,7 +60,6 @@ const MapDashboardSection = () => {
 
       <div className="flex flex-col lg:flex-row gap-6 relative">
         <div className="w-full h-[60vh] lg:h-[90vh] rounded-2xl overflow-hidden border border-borderLight relative shadow-2xl">
-          {/* Tombol Filter Kategori */}
           <div className="absolute top-4 left-4 z-[400] flex gap-2 flex-wrap">
             {filters.map((filter) => (
               <button
@@ -67,15 +80,20 @@ const MapDashboardSection = () => {
           </div>
 
           <MapContainer
-            center={[3.659, 98.95]} // Titik tengah disesuaikan agar semua marker terlihat
-            zoom={15}
+            center={[3.659, 98.95]}
+            zoom={14} // Sedikit diperkecil agar polygon lebih terlihat secara utuh
             zoomControl={false}
             className="w-full h-full"
           >
-            {/* PETA SATELIT MENGGUNAKAN ESRI WORLD IMAGERY */}
             <TileLayer
               url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
               attribution="&copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
+            />
+
+            {/* MERENDER POLYGON BATAS WILAYAH */}
+            <Polygon
+              pathOptions={polygonOptions}
+              positions={desaKotaPariPolygon}
             />
 
             {filteredSites.map((site) => (
@@ -90,7 +108,6 @@ const MapDashboardSection = () => {
             ))}
           </MapContainer>
 
-          {/* Popup Custom */}
           <AnimatePresence>
             {activeSite && (
               <motion.div
@@ -100,6 +117,7 @@ const MapDashboardSection = () => {
                 transition={{ duration: 0.3 }}
                 className="absolute bottom-6 left-6 lg:left-auto lg:right-6 z-[500] w-[calc(100%-48px)] lg:w-80 bg-bgCard border border-borderLight rounded-xl p-4 shadow-2xl"
               >
+                {/* ... (Isi popup tidak diubah) ... */}
                 <div className="relative">
                   <button
                     onClick={() => setActiveSite(null)}
