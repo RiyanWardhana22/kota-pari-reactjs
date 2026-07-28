@@ -1,0 +1,42 @@
+quizDatabase = [
+  {
+    question:
+      "Apa nama tradisi tolak bala yang dilakukan nelayan Kota Pari setiap 3-5 tahun sekali?",
+    options: ["Jamu Laut", "Sedekah Bumi", "Mandi Safar", "Petik Laut"],
+    answer: "Jamu Laut",
+  },
+  {
+    question:
+      "Siapakah tokoh yang menginisiasi Festival Datuk Pengembara pada tahun 2006?",
+    options: [
+      "Syafi'i Harahap",
+      "Abdul Manak",
+      "Iswanto Browo",
+      "Sultan Serdang",
+    ],
+    answer: "Iswanto Browo",
+  },
+  {
+    question:
+      "Berdasarkan legenda, terbuat dari apakah istana milik Sri Putri Cermin?",
+    options: ["Emas Murni", "Pasir Kuarsa", "Batu Karang", "Kayu Jati"],
+    answer: "Pasir Kuarsa",
+  },
+  {
+    question:
+      "Pantai apa yang menjadi objek wisata pertama dan memicu pariwisata Desa Kota Pari pada tahun 2004?",
+    options: [
+      "Pantai Cermin",
+      "Pantai Mutiara 88",
+      "Pantai Kuala Dewi",
+      "Pantai Wong Rame",
+    ],
+    answer: "Pantai Wong Rame",
+  },
+  {
+    question:
+      "Menurut salah satu versi cerita, nama 'Kota Pari' juga dikaitkan dengan kedatangan pelaut dari daerah mana?",
+    options: ["Palembang", "Parepare", "Pontianak", "Pariaman"],
+    answer: "Parepare",
+  },
+];

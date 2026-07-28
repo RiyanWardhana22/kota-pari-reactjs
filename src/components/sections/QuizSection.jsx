@@ -8,47 +8,145 @@ import {
   BrainCircuit,
 } from "lucide-react";
 
-// Data Master Kuis
 const quizDatabase = [
   {
-    question:
-      "Apa nama tradisi tolak bala yang dilakukan nelayan Kota Pari setiap 3-5 tahun sekali?",
-    options: ["Jamu Laut", "Sedekah Bumi", "Mandi Safar", "Petik Laut"],
-    answer: "Jamu Laut",
+    question: "Desa Kota Pari diperkirakan mulai berdiri sekitar tahun...",
+    options: ["1945", "1950", "1960-an", "1975"],
+    answer: "1960-an",
   },
   {
-    question:
-      "Siapakah tokoh yang menginisiasi Festival Datuk Pengembara pada tahun 2006?",
+    question: "Salah satu versi asal-usul nama Desa Kota Pari adalah karena...",
     options: [
-      "Syafi'i Harahap",
-      "Abdul Manak",
-      "Iswanto Browo",
-      "Sultan Serdang",
+      "Banyak pohon kelapa",
+      "Banyak tambak garam",
+      "Banyak ikan pari di kawasan pantai",
+      "Banyak perahu nelayan",
     ],
-    answer: "Iswanto Browo",
+    answer: "Banyak ikan pari di kawasan pantai",
   },
   {
     question:
-      "Berdasarkan legenda, terbuat dari apakah istana milik Sri Putri Cermin?",
-    options: ["Emas Murni", "Pasir Kuarsa", "Batu Karang", "Kayu Jati"],
-    answer: "Pasir Kuarsa",
-  },
-  {
-    question:
-      "Pantai apa yang menjadi objek wisata pertama dan memicu pariwisata Desa Kota Pari pada tahun 2004?",
+      "Objek wisata pertama yang berkembang di Desa Kota Pari adalah...",
     options: [
-      "Pantai Cermin",
-      "Pantai Mutiara 88",
-      "Pantai Kuala Dewi",
+      "Pantai Bali Lestari",
+      "Pantai Cermin Theme Park",
       "Pantai Wong Rame",
+      "Pantai Sri Mersing",
     ],
     answer: "Pantai Wong Rame",
   },
   {
     question:
-      "Menurut salah satu versi cerita, nama 'Kota Pari' juga dikaitkan dengan kedatangan pelaut dari daerah mana?",
-    options: ["Palembang", "Parepare", "Pontianak", "Pariaman"],
-    answer: "Parepare",
+      "Sebelum menjadi tempat wisata, kawasan Pantai Wong Rame dulunya merupakan...",
+    options: ["Sawah", "Pelabuhan", "Tambak udang", "Hutan bakau"],
+    answer: "Tambak udang",
+  },
+  {
+    question: "Desa Kota Pari dahulu termasuk wilayah...",
+    options: [
+      "Kesultanan Deli",
+      "Kesultanan Siak",
+      "Kesultanan Serdang",
+      "Kesultanan Aceh",
+    ],
+    answer: "Kesultanan Serdang",
+  },
+  {
+    question:
+      "Tradisi yang dilakukan masyarakat nelayan sebagai ungkapan syukur kepada Allah SWT disebut...",
+    options: ["Kenduri", "Tepung Tawar", "Jamu Laut", "Sedekah Laut"],
+    answer: "Jamu Laut",
+  },
+  {
+    question:
+      "Festival budaya yang menjadi simbol kerukunan masyarakat di Desa Kota Pari adalah...",
+    options: [
+      "Festival Bahari",
+      "Festival Nelayan",
+      "Festival Datuk Pengembara",
+      "Festival Melayu",
+    ],
+    answer: "Festival Datuk Pengembara",
+  },
+  {
+    question:
+      "Pakaian adat Melayu yang diperkenalkan dalam DigiMuseum adalah...",
+    options: ["Ulos", "Kebaya", "Bundo Kanduang", "Teluk Belanga"],
+    answer: "Teluk Belanga",
+  },
+  {
+    question: "Filosofi utama pakaian adat Teluk Belanga adalah...",
+    options: [
+      "Kemewahan",
+      "Kekuasaan",
+      "Kesopanan dan nilai-nilai Islam",
+      "Keberanian",
+    ],
+    answer: "Kesopanan dan nilai-nilai Islam",
+  },
+  {
+    question: "Apa tujuan utama dibuatnya DigiMuseum Kota Pari?",
+    options: [
+      "Menjual hasil laut",
+      "Promosi wisata saja",
+      "Mencari keuntungan",
+      "Melestarikan sejarah dan budaya Desa Kota Pari melalui media digital",
+    ],
+    answer:
+      "Melestarikan sejarah dan budaya Desa Kota Pari melalui media digital",
+  },
+  {
+    question: "Pernikahan dini dapat meningkatkan risiko...",
+    options: [
+      "Prestasi sekolah meningkat",
+      "Mudah mendapat pekerjaan",
+      "Putus sekolah dan masalah kesehatan",
+      "Penghasilan bertambah",
+    ],
+    answer: "Putus sekolah dan masalah kesehatan",
+  },
+  {
+    question:
+      "Menurut hasil wawancara, penyebab utama pernikahan dini pada masa lalu adalah...",
+    options: [
+      "Ingin cepat bekerja",
+      "Tradisi lomba",
+      "Faktor ekonomi dan tidak melanjutkan pendidikan",
+      "Pariwisata",
+    ],
+    answer: "Faktor ekonomi dan tidak melanjutkan pendidikan",
+  },
+  {
+    question: "Mengapa generasi muda perlu mengetahui sejarah desanya?",
+    options: [
+      "Agar cepat terkenal",
+      "Agar mudah pindah desa",
+      "Agar mampu melestarikan budaya dan identitas daerah",
+      "Agar mendapat nilai tinggi",
+    ],
+    answer: "Agar mampu melestarikan budaya dan identitas daerah",
+  },
+  {
+    question: "Apa manfaat DigiMuseum bagi siswa?",
+    options: [
+      "Sebagai media hiburan",
+      "Untuk bermain game",
+      "Sebagai media pembelajaran sejarah lokal yang mudah diakses",
+      "Sebagai tempat jual beli",
+    ],
+    answer: "Sebagai media pembelajaran sejarah lokal yang mudah diakses",
+  },
+  {
+    question:
+      "Menurut kalian, apa yang dapat dilakukan generasi muda untuk menjaga sejarah dan budaya Desa Kota Pari?",
+    options: [
+      "Tidak peduli terhadap budaya",
+      "Membiarkan sejarah dilupakan",
+      "Menjual benda bersejarah",
+      "Mempelajari, menjaga, dan memperkenalkan budaya melalui media digital",
+    ],
+    answer:
+      "Mempelajari, menjaga, dan memperkenalkan budaya melalui media digital",
   },
 ];
 
@@ -63,7 +161,7 @@ const QuizSection = () => {
   const startQuiz = () => {
     const shuffled = [...quizDatabase]
       .sort(() => 0.5 - Math.random())
-      .slice(0, 4);
+      .slice(0, 5);
     setQuestions(shuffled);
     setCurrentIndex(0);
     setScore(0);
@@ -92,8 +190,8 @@ const QuizSection = () => {
   };
 
   const getTitle = () => {
-    if (score === 4) return "Sesepuh";
-    if (score >= 2) return "Medium";
+    if (score === 5) return "Sesepuh";
+    if (score >= 3) return "Medium";
     return "Amatir";
   };
 
@@ -101,7 +199,6 @@ const QuizSection = () => {
     <section className="py-24 px-6 md:px-20 max-w-[1440px] mx-auto w-full relative z-10">
       <div className="max-w-4xl mx-auto backdrop-blur-xl border border-borderLight rounded-3xl overflow-hidden shadow-2xl relative min-h-[500px] flex flex-col items-center justify-center p-8 md:p-12">
         <AnimatePresence mode="wait">
-          {/* ================= LAYAR AWAL ================= */}
           {gameState === "start" && (
             <motion.div
               key="start"
