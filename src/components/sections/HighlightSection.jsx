@@ -15,7 +15,7 @@ const HighlightSection = () => {
     },
     {
       title: "Budaya dan Kearifan Lokal",
-      desc: "Masyarakat Desa Kota Pari terus melestarikan budaya dan kearifan lokal sebagai bagian dari identitas mereka. Tradisi Tolak Bala masih rutin dilaksanakan setiap tahun sebagai bentuk ungkapan syukur dan harapan akan keselamatan. Nilai-nilai budaya Melayu juga tetap dipertahankan, salah satunya melalui tradisi makan bersama secara berhadapan yang masih diwariskan antargenerasi. Selain itu, terdapat lokasi bersejarah bernama Datuk Pengembara yang setiap tahun menjadi pusat penyelenggaraan pesta budaya, sehingga berperan penting dalam menjaga sekaligus memperkenalkan warisan budaya desa kepada masyarakat luas.",
+      desc: "Masyarakat Desa Kota Pari terus melestarikan budaya dan kearifan lokal sebagai bagian dari identitas mereka. Tradisi Tolak Bala masih rutin dilaksanakan 3-5 tahun sekali sebagai bentuk ungkapan syukur dan harapan akan keselamatan. Nilai-nilai budaya Melayu juga tetap dipertahankan, salah satunya melalui tradisi makan bersama secara berhadapan yang masih diwariskan antargenerasi. Selain itu, terdapat lokasi bersejarah bernama Datuk Pengembara yang setiap tahun menjadi pusat penyelenggaraan pesta budaya, sehingga berperan penting dalam menjaga sekaligus memperkenalkan warisan budaya desa kepada masyarakat luas.",
       delay: 0.6,
     },
   ];

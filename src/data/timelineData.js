@@ -11,7 +11,7 @@ export const timelineData = [
     year: "1960-an",
     title: "Awal Pemerintahan Desa",
     description:
-      "Desa Kota Pari diperkirakan mulai berdiri secara administratif pada tahun 1960-an. Wilayah desa ini dahulunya merupakan bagian dari tanah kesultanan. Pada awal pembentukannya, tokoh masyarakat yang diketahui menjabat sebagai Kepala Kampung adalah Bapak Abdul Manak.",
+      "Desa Kota Pari diperkirakan mulai berdiri secara administratif pada tahun 1960-an. Wilayah desa ini dahulunya merupakan bagian dari tanah kesultanan. Pada awal pembentukannya, tokoh masyarakat yang diketahui menjabat sebagai Kepala Desa adalah Bapak Abdul Manak kemudian di Bapak Ahmad as (1970-1985), Bapak Sarno bayuwaji (1985-1995), Bapak Samudin (1972-1995), Tengku juhir (1995-2000), Supriadi (2000-2014), Abdul khair (2014-sekarang).",
   },
   {
     id: 3,

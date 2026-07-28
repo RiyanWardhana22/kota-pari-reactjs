@@ -90,8 +90,8 @@ const Footer = () => {
         {/* Bottom Section: Copyright & Social Media */}
         <div className="border-t border-borderLight pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-textBody text-sm text-center md:text-left">
-            &copy; {new Date().getFullYear()} Sejarah Kota Pari. Digital
-            Heritage Project. All rights reserved.
+            &copy; {new Date().getFullYear()} Digi Museum. KKN UNIMED 2026. All
+            rights reserved.
           </p>
 
           {/* Social Media Buttons */}

@@ -35,6 +35,12 @@ const GallerySection = () => {
       img: "/assets/images/galeri-4.jpeg",
       span: "col-span-12 md:col-span-8 row-span-1",
     },
+    {
+      id: 5,
+      title: "Tradisi Jamu Laut",
+      img: "/assets/images/ceritalegenda/jamu_laut.webp",
+      span: "col-span-12 md:col-span-4 row-span-1",
+    },
   ];
 
   // Implementasi GSAP 3D Scroll & Hover

@@ -22,7 +22,7 @@ const MapDashboardSection = () => {
   const [activeFilter, setActiveFilter] = useState("Semua");
   const [activeSite, setActiveSite] = useState(null);
 
-  const filters = ["Semua", "Pemerintahan", "Wisata", "Sejarah", "Maritim"];
+  const filters = ["Semua", "Pemerintahan", "Wisata", "Sejarah"];
 
   const filteredSites =
     activeFilter === "Semua"
