@@ -11,6 +11,7 @@ import KesultananStorySection from "./components/sections/KesultananStorySection
 import BajuAdatSection from "./components/sections/BajuAdatSection";
 import QuizSection from "./components/sections/QuizSection";
 import GameKisahPengembara from "./components/sections/GameKisahPengembara";
+import SalamHangatSection from "./components/sections/SalamHangatSection";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <KesultananStorySection />
         <QuizSection />
         {/* <GameKisahPengembara /> */}
+        <SalamHangatSection />
       </main>
       <Footer />
     </div>
