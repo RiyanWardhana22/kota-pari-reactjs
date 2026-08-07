@@ -3,15 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const BajuAdatSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-
-  // Data Pakaian Adat
   const attires = [
     {
       id: "teluk-belanga",
       name: "Teluk Belanga",
       gender: "Busana Pria",
       description:
-        "Busana tradisional pria Melayu yang identik dengan kerah bulat yang khas, dipadukan dengan kain samping songket yang diikat rapi di pinggang. Pakaian ini mencerminkan kewibawaan, kesopanan, serta tata krama masyarakat pesisir Kesultanan Serdang.",
+        "Busana Telok Belanga adalah pakaian tradisional Melayu yang terdiri atas baju panjang, celana panjang, dan kain setengah tiang. Busana ini melambangkan perlindungan karena menutupi hampir seluruh tubuh dan juga digunakan dalam Tari Jepin Langkah Simpang di Kota Pontianak. Sumber Abdul Khair. Kepala Desa Kota Pari, Wawancara, 15 Juli 2026",
       image: "/assets/images/telukBelanga.jpeg",
     },
     {
@@ -19,14 +17,13 @@ const BajuAdatSection = () => {
       name: "Baju Kurung",
       gender: "Busana Wanita",
       description:
-        "Pakaian adat wanita Melayu berpotongan longgar yang menjunjung tinggi nilai kesantunan. Detail pola yang elegan serta paduan kain songket mempertegas identitas, keanggunan, dan kelembutan perempuan Melayu pesisir.",
+        "Baju kurung merupakan busana tradisional Melayu yang berkembang sejak masa Kesultanan Melayu di Sumatra, Semenanjung Malaysia, dan Brunei. Busana ini berciri longgar, sopan, menutup aurat sesuai nilai-nilai Islam, serta menjadi simbol identitas budaya dan adat masyarakat Melayu. Sumber Abdul Khair. Kepala Desa Kota Pari, Wawancara, 15 Juli 2026",
       image: "/assets/images/bajukarung.png",
     },
   ];
 
   return (
     <section className="py-24 px-6 md:px-20 max-w-[1440px] mx-auto w-full relative z-10 overflow-hidden bg-bgPrimary">
-      {/* Latar Belakang Animasi Garis Mengalir Horizontal (Floating Lines) */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
         {[...Array(6)].map((_, i) => (
           <motion.div
@@ -56,9 +53,7 @@ const BajuAdatSection = () => {
       </div>
 
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
-        {/* Panel Navigasi & Teks Deskripsi (Kiri) */}
         <div className="w-full md:w-1/2 flex flex-col gap-8">
-          {/* Tombol Interaktif (Tabs) */}
           <div className="flex bg-bgCard p-2 rounded-full border border-borderLight shadow-lg">
             {attires.map((item, index) => (
               <button
@@ -99,9 +94,7 @@ const BajuAdatSection = () => {
 
         {/* Panel Gambar & Animasi (Kanan) */}
         <div className="w-full md:w-1/2 flex justify-center relative">
-          {/* Efek Glow di Belakang Etalase Gambar */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-accentRed/10 blur-[80px] rounded-full pointer-events-none"></div>
-
           <AnimatePresence mode="wait">
             <motion.div
               key={activeIndex}
@@ -111,12 +104,10 @@ const BajuAdatSection = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="relative"
             >
-              {/* Animasi Melayang (Floating) Terus Menerus */}
               <motion.div
                 animate={{ y: [-10, 10, -10] }}
                 className="relative z-10 p-4 bg-bgCard border border-borderLight rounded-2xl shadow-2xl"
               >
-                {/* Frame Etalase berlatar putih agar gambar terlihat rapi */}
                 <div className="w-full max-w-[300px] h-[450px] bg-white rounded-xl overflow-hidden relative">
                   <img
                     src={attires[activeIndex].image}

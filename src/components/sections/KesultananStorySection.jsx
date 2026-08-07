@@ -14,7 +14,7 @@ const KesultananStorySection = () => {
       title: "Tanah Kesultanan Serdang",
       subtitle: "1723 - Era Kolonial",
       content:
-        "Kesultanan Deli dan Kesultanan Serdang merupakan dua kerajaan Melayu di Sumatera Timur yang berasal dari keturunan Gotjah Pahlawan. Kesultanan Deli berdiri pada 1623, sedangkan Kesultanan Serdang berdiri pada 1723 akibat konflik suksesi di Deli. Pada masa kolonial, campur tangan Belanda mengubah batas wilayah kedua kesultanan dan membentuk Afdeling Deli en Serdang, yang kemudian menjadi dasar terbentuknya Kabupaten Deli Serdang. Setelah pemekaran pada tahun 2004, wilayah bekas Kesultanan Serdang terbagi antara Kabupaten Deli Serdang dan Kabupaten Serdang Bedagai.",
+        "Kesultanan Deli dan Kesultanan Serdang merupakan dua kerajaan Melayu di Sumatera Timur yang berasal dari keturunan Gotjah Pahlawan. Kesultanan Deli berdiri pada 1623, sedangkan Kesultanan Serdang berdiri pada 1723 akibat konflik suksesi di Deli. Pada masa kolonial, campur tangan Belanda mengubah batas wilayah kedua kesultanan dan membentuk Afdeling Deli en Serdang, yang kemudian menjadi dasar terbentuknya Kabupaten Deli Serdang. Setelah pemekaran pada tahun 2004, wilayah bekas Kesultanan Serdang terbagi antara Kabupaten Deli Serdang dan Kabupaten Serdang Bedagai. umber  Dr. Hj. Tengku Mira Sinar, M.A. Ketua Yayasan Kesultanan Serdang. Wawancara daring, 23 Juli 2026.",
       image: "/assets/images/ceritalegenda/kesultanan.jpg",
     },
     {
